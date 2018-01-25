@@ -5,7 +5,7 @@ from flask import jsonify
 from flask import abort
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////Users/mx/Documents/DistilledSCH/database.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db' # relative path to database
 app.config['SQLALCHEMY_COMMIT_ON_TEARDOWN'] = True
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 db = SQLAlchemy(app)
