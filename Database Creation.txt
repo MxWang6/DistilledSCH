@@ -1,0 +1,21 @@
+Create a database
+——————————————
+sqlite3 database.db
+
+
+DDL - Create car table
+——————————————
+CREATE TABLE car (
+	make text NOT NULL,
+	model text NOT NULL,
+	year integer NULL,
+	chassis_id text NOT NULL,
+	id integer PRIMARY KEY,
+	last_updated text NOT NULL,
+	price real NULL
+);
+
+Import the data from the csv file into the car table
+——————————————
+.mode csv
+.import /Users/mx/Documents/DistilledSCH/data.csv cars
